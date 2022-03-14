@@ -1,0 +1,87 @@
+body {
+    background-color: lightblue;
+    color: midnightblue;
+}
+nav ul {
+    display:flex;
+    flex-wrap:wrap;
+    margin:0;
+    padding:0;
+    z-index: 10;
+}
+nav li {
+    list-style: none;
+    background-color: midnightblue;
+    color:lightblue;
+    margin: 0;
+    flex:1;
+    min-width: 75px;
+    text-align: center;
+    display: flex;
+    border: solid 2px lightblue;
+    position: relative;
+}
+nav a, nav a:visited {
+    text-decoration:none;
+    width: 100%;
+    padding: 8px 0px;
+    color:lightblue;
+}
+nav a:hover {
+    color: aqua;
+    background-color: cornflowerblue;
+}
+nav a:hover, nav a.active {
+    color: aqua;
+    background-color: cornflowerblue;
+}
+.dropdown-content {
+    position: absolute;
+    top:38px;
+    width:100%;
+    display:none;
+    z-index:20;
+}
+nav li:hover .dropdown-content {
+    display:block;
+}
+.dropdown-content a {
+    font-weight:bold;
+}
+.dropdown-content  ul {
+    flex-direction:column;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.card-area {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.card {
+    width:150px;
+    min-height: 225px;
+    background-color: azure;
+    border-radius: 8px;
+    margin:8px;
+}
+.name {
+    font-weight: bold;
+    margin: 0 5px 0 5px;
+}
+.price {
+    font-weight: bold;
+    margin: 10px 0 0 5px;
+}
+.logo {
+    border-radius: 1000px;
+}
+.top-section {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
